@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+    .table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    
+        .header {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+            padding: 12px 15px;
+    
+            >tr>th {
+                text-align: center;
+                padding: 12px 0px;
+            }
+        }
+    }
+}

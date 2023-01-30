@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .controlBlock {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}

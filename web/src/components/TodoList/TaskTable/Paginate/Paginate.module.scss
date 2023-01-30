@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    
+    .pageNumber {
+        margin: 5px;
+        background: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &.currentPage {
+            background-color: rgb(101, 101, 196);
+            cursor: default;
+        }
+    }
+}
