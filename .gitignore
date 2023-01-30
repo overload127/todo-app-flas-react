@@ -122,6 +122,8 @@ venv.bak/
 .vscode/
 .flake8
 .env
+app.db
+server/migrations/
 
 # Spyder project settings
 .spyderproject
