@@ -1,7 +1,7 @@
 import hashlib
 import logging
 from datetime import datetime, timezone, timedelta
-from flask import Blueprint, current_app, request, jsonify
+from flask import Blueprint, current_app, request
 from flask_jwt_extended import jwt_required
 from flask_jwt_extended import create_access_token, create_refresh_token, get_jwt_identity, get_jwt
 from flask_jwt_extended import set_access_cookies, set_refresh_cookies, unset_jwt_cookies
@@ -50,12 +50,6 @@ def refresh():
     response = ApiResponse.success(None, 'refresh')
     set_access_cookies(response[0], access_token)
     return response
-
-
-@auth_blueprint.route('/protected', methods=['GET'])
-@jwt_required()
-def protected():
-    return jsonify(foo='bar'), 200
 
 
 @current_app.after_request
